@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Ahmad Hamoush</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@100&family=Sacramento&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+  <section class="header">
+    <nav>
+      <h2 class="logo"><a style="text-decoration: none; color:#fff;" href="index.html">Personal Website</a></h2>
+      <input type="checkbox" id="active">
+      <label for="active" id="close" class="menu-btn"><span></span></label>
+      <label for="active" class="close"></label>
+      <div id="wrap" class="wrapper">
+        <ul>
+          <li><a onclick="hideWrapper()" class="links" href="#top-container">Home</a></li>
+          <li><a onclick="hideWrapper()" class="links" href="#about">About</a></li>
+          <li><a onclick="hideWrapper()" class="links" href="#skills">Skills</a></li>
+          <li><a onclick="hideWrapper()" class="links" href="#proj">Projects</a></li>
+          <li><a onclick="hideWrapper()" class="links" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="top-container">
+      <h1 class="title">I'm Ahmad.</h1> <br>
+      <br><br><br><br><br>
+      <h2 class="subtitle">a <span class="web">full-stack</span> web developer.</h2>
+
+    </div>
+
+  </section>
+
+  <div id="about" class="middle-container">
+    <div class="profile">
+      <img src="images/ahmad-modified.png" width="170" height="170" alt="profile-img">
+      <h2>Hello.</h2>
+      <p class="intro">I am a 3rd-year Computer Science student at the Lebanese American University pursuing a BA degree.</p>
+    </div>
+    <hr>
+    <div id="skills" class="skill">
+      <h2>My Skills.</h2>
+      <div class="skill-row">
+        <img class="computer-img" src="images/computer.png" alt="computer-img">
+        <h3>Programing & Coding</h3>
+        <p>I am passionate and excited about programming. I have learned so far JAVA, HTML5, CSS, Node JS, MongoDB, C#, SQL, and JavaScript. Besides that, I practice and go through coding challenges monthly.</p>
+      </div>
+      <div class="skill-row">
+        <img class="ps-img" src="images/thinking.png" alt="prob-solving-img">
+        <h3>Problem Solving</h3>
+        <p>Throughout my intensive 2-years at the university, I became professional in solving problems related to the CS field and social life.</p>
+      </div>
+    </div>
+    <hr>
+    <div id="proj" class="projects">
+      <h2>Game Projects</h2>
+      <div class="video">
+        <div class="video-container">
+          <video width="450" height="300" src="video/game1.mp4">
+          </video> <br>
+          <p class="desc">Bang Bang in Space, University Project#1, developed with C# using Unity and Rider</p>
+          <p></p>
+
+        </div>
+
+        <div class="video-container">
+
+          <video width="450" height="300" src="video/game2.mp4">
+
+          </video>
+          <p class="desc">Light vs Dark, University Project#2, developed with C# using Unity and Rider</p>
+        </div>
+        <div class="video-container">
+          <video width="350" height="300" src="video/game3.mp4">
+
+          </video>
+          <p class="desc">Dollar Dollar Shooter, University Project#3, developed with C# using Unity and Rider</p>
+        </div>
+      </div>
+      <div class="">
+        <h2>Web Projects</h2>
+        <p>Knowledge of several web design techniques using several technologies.</p>
+        <p>Can build a fully <span style="text-decoration:underline;color:#884dff">functional</span> website based on your needs and requirments.</p>
+        <p>For more inquires, dont hesistate to <span style="color:#884dff">contact me!</span></p>
+      </div>
+    </div>
+    <div id="contact" class="contact-me">
+      <h2>Get In Touch</h2>
+      <h3>If you are seeking help!</h3>
+      <p class="contact-message">We can have a coffee lunch nearby, and while that we can discuss work.</p>
+      <a class="btn" href="mailto:hamoush@outlook.com">CONTACT ME</a>
+    </div>
+  </div>
+
+
+  <div class="bottom-container">
+    <a class="footer-link" href="https://www.linkedin.com/in/ahmad-hamoush-63b374204/">LinkedIn</a>
+    <a class="footer-link" href="https://www.instagram.com/hamoush1/">Instagram</a>
+    <a class="footer-link" href="https://www.appbrewery.co/">Website</a>
+    <p class="copyright">© 2021 Ahmad Hamoush.</p>
+  </div>
+  <meta name="viewport" content="width=device-width, intital-scale=1;">
+
+</body>
+<script type="text/javascript">
+  var vid = document.getElementsByTagName("video");
+  [].forEach.call(vid, function(item) {
+    item.addEventListener('mouseover', hoverVideo, false);
+    item.addEventListener('mouseout', hideVideo, false);
+  });
+
+  function hoverVideo(e) {
+    this.play();
+  }
+
+  function hideVideo(e) {
+    this.pause();
+  }
+</script>
+<script type="text/javascript">
+  function hideWrapper() {
+    var wrap = document.getElementById("wrap");
+    var label = document.getElementById("close");
+    wrap.style.display = "none";
+    label.style.display = "none";
+  }
+</script>
+
+</html>
