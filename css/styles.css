@@ -459,4 +459,33 @@ input[type="checkbox"] {
   .video {
     display: block;
   }
+  .wrapper ul{
+    left:45%;
+  }
+  .top-container{
+    margin-top:60px;
+    padding-top:0;
+  }
+  .subtitle{
+    margin-top: -32px;
+  }
+  h2{
+    margin-top:30px;
+  }
+  .computer-img{
+    width:50%;
+  }
+  .skill-row{
+    margin-top:30px;
+  }
+  .ps-img{
+    width:52%;
+    margin-left:0;
+  }
+  h3{
+    font-size:48px;
 }
+  h1{
+    font-size:6rem;
+  }
+  
